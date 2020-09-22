@@ -16,6 +16,8 @@ jobs:
       - name: Lint ⚡️
         run: npm run lint
       - name: Build 📦
+        env:
+          NODE_ENV: production
         run: npm run build
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.6.1
