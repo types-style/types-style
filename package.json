@@ -22,7 +22,8 @@
   },
   "scripts": {
     "dev": "gatsby develop",
-    "build": "gatsby build",
+    "build": "rm -rf public && gatsby build",
+    "serve": "gatsby serve",
     "lint": "eslint 'src/**/*.js?(x)'"
   },
   "repository": {
