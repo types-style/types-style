@@ -1,0 +1,43 @@
+{
+  "name": "types-style",
+  "version": "0.1.0",
+  "description": "Dedicated, mobile-first editor for micro-blogging",
+  "main": "src/pages/index.js",
+  "dependencies": {
+    "gatsby": "^2.24.63",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.9.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-config-standard-react": "^9.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.20.6",
+    "eslint-plugin-standard": "^4.0.1",
+    "prettier": "^2.1.2"
+  },
+  "scripts": {
+    "dev": "gatsby develop",
+    "build": "gatsby build",
+    "lint": "eslint 'src/**/*.js?(x)'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/types-style/types-style.git"
+  },
+  "keywords": [
+    "editor",
+    "micro-blogging",
+    "ascii"
+  ],
+  "author": "Balaj Marius",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/types-style/types-style/issues"
+  },
+  "homepage": "https://github.com/types-style/types-style#readme"
+}
