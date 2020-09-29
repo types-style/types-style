@@ -1,5 +1,37 @@
 import React from "react";
+import { useSpring } from "react-spring";
 
-export default function Home() {
-  return <h1>🥁 types.style</h1>;
+import { SPRING_CONFIG } from "../utilities/const";
+
+import Row from "../atoms/Row";
+import Layout from "../layouts/Layout";
+
+import Header from "../molecules/Header";
+import Subscribe from "../molecules/Subscribe";
+import Presentation from "../molecules/Presentation";
+
+export function calc(x, y) {
+  return [x - window.innerWidth / 2, y - window.innerHeight / 2];
 }
+
+function Home() {
+  const [spring, set] = useSpring(() => SPRING_CONFIG);
+
+  const onMouseMove = ({ clientX, clientY }) => {
+    set({
+      xy: calc(clientX, clientY)
+    });
+  };
+
+  return (
+    <Layout onMouseMove={onMouseMove}>
+      <Header />
+      <Row>
+        <Subscribe />
+        <Presentation xy={spring.xy} />
+      </Row>
+    </Layout>
+  );
+}
+
+export default Home;
