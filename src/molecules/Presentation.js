@@ -25,7 +25,7 @@ const IMAGES = [
 const MOVE_FACTORS = [
   { x: 10, y: 20 },
   { x: 20, y: 20 },
-  { x: 9, y: 19 },
+  { x: 5, y: 19 },
   { x: 10, y: 16 },
   { x: 19, y: 17 },
   { x: 10, y: 16 },
