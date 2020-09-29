@@ -23,13 +23,13 @@ const IMAGES = [
 ];
 
 const MOVE_FACTORS = [
-  { x: 10, y: 9 },
-  { x: 20, y: 20 },
-  { x: 5, y: 19 },
-  { x: 4, y: 12 },
-  { x: 15, y: 8 },
-  { x: 10, y: 12 },
-  { x: 11, y: 15 }
+  { x: 20, y: 17 },
+  { x: 35, y: 30 },
+  { x: 25, y: 21 },
+  { x: 27, y: 40 },
+  { x: 30, y: 24 },
+  { x: 26, y: 24 },
+  { x: 27, y: 28 }
 ];
 
 function position(xy, index) {
