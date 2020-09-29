@@ -11,7 +11,7 @@ import Subscribe from "../molecules/Subscribe";
 import Presentation from "../molecules/Presentation";
 
 export function calc(x, y) {
-  return [x - window.innerWidth / 2, y - window.innerHeight / 2];
+  return [x - window.innerWidth / SPRING_CONFIG.factor, y - window.innerHeight / SPRING_CONFIG.factor];
 }
 
 function Home() {
