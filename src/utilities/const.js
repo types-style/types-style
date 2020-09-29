@@ -42,6 +42,7 @@ export const SIZES = {
 
 export const SPRING_CONFIG = {
   xy: [0, 0],
+  factor: 2,
   config: {
     mass: 10,
     tension: 550,
@@ -49,4 +50,5 @@ export const SPRING_CONFIG = {
   }
 };
 
+// prettier-ignore
 export const MAILCHIMP_URL = "https://style.us2.list-manage.com/subscribe/post?u=a0b202b5c288322b9c7dcce9c&amp;id=36be112941";
