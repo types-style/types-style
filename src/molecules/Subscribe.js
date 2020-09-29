@@ -7,6 +7,8 @@ import Column from "../atoms/Column";
 import Spacing from "../atoms/Spacing";
 import Typography from "../atoms/Typography";
 
+import { MAILCHIMP_URL } from "../utilities/const";
+
 function Subscribe() {
   return (
     <Column>
@@ -17,9 +19,9 @@ function Subscribe() {
         <Typography variant="label">Get notified when we launch</Typography>
       </Spacing>
 
-      <form>
+      <form method="post" target="_blank" action={MAILCHIMP_URL}>
         <Row>
-          <Input name="email" placeholder="E-mail address" />
+          <Input type="email" name="EMAIL" placeholder="E-mail address" />
           <Button type="submit">Subscribe</Button>
         </Row>
       </form>

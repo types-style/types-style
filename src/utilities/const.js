@@ -48,3 +48,5 @@ export const SPRING_CONFIG = {
     friction: 140
   }
 };
+
+export const MAILCHIMP_URL = "https://style.us2.list-manage.com/subscribe/post?u=a0b202b5c288322b9c7dcce9c&amp;id=36be112941";

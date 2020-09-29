@@ -12,9 +12,6 @@ import quotes from "../static/quotes@2x.png";
 import controls from "../static/controls@2x.png";
 import post from "../static/post@2x.png";
 
-/**
- * Constants
- */
 const IMAGES = [
   { src: controls, absolute: true },
   { src: post, absolute: false },
@@ -26,18 +23,15 @@ const IMAGES = [
 ];
 
 const MOVE_FACTORS = [
-  { x: 10, y: 10 },
+  { x: 10, y: 20 },
   { x: 20, y: 20 },
-  { x: 9, y: 11 },
-  { x: 13, y: 12 },
-  { x: 19, y: 12 },
-  { x: 10, y: 7 },
-  { x: 5, y: 10 }
+  { x: 9, y: 19 },
+  { x: 10, y: 16 },
+  { x: 19, y: 17 },
+  { x: 10, y: 16 },
+  { x: 11, y: 15 }
 ];
 
-/**
- * Helpers
- */
 function position(xy, index) {
   return xy.interpolate((x, y) => `translate3d(${x / MOVE_FACTORS[index].x}px, ${y / MOVE_FACTORS[index].y}px, 0)`);
 }

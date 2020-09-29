@@ -7,8 +7,8 @@ const Container = styled.div`
   margin-left: auto;
   margin-right: auto;
   width: ${SIZES.container};
-  margin-top: ${SPACING.sm};
-  margin-bottom: ${SPACING.sm};
+  padding-top: ${SPACING.sm};
+  padding-bottom: ${SPACING.sm};
 `;
 
 export default Container;
