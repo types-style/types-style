@@ -22,7 +22,7 @@ const IMAGES = [
   { src: call, absolute: true }
 ];
 
-const MOVE_FACTORS = [
+const MOVE_FRICTION = [
   { x: 20, y: 17 },
   { x: 35, y: 30 },
   { x: 25, y: 21 },
@@ -33,7 +33,7 @@ const MOVE_FACTORS = [
 ];
 
 function position(xy, index) {
-  return xy.interpolate((x, y) => `translate3d(${x / MOVE_FACTORS[index].x}px, ${y / MOVE_FACTORS[index].y}px, 0)`);
+  return xy.interpolate((x, y) => `translate3d(${x / MOVE_FRICTION[index].x}px, ${y / MOVE_FRICTION[index].y}px, 0)`);
 }
 
 function Presentation({ xy }) {

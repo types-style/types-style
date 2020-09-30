@@ -9,11 +9,7 @@ const Typography = styled.span`
 `;
 
 Typography.propTypes = {
-  variant: PropTypes.oneOf(Object.keys(FONT_SIZE))
-};
-
-Typography.defaultProps = {
-  variant: "label"
+  variant: PropTypes.oneOf(Object.keys(FONT_SIZE)).isRequired
 };
 
 export default Typography;
