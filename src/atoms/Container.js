@@ -18,6 +18,10 @@ const Container = styled.div`
     padding-left: ${SPACING.sm};
     padding-right: ${SPACING.sm};
   }
+
+  @media ${MEDIA_QUERIES.small} {
+    padding-bottom: ${SPACING.sm};
+  }
 `;
 
 export default Container;
