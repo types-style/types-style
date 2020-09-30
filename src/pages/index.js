@@ -26,7 +26,7 @@ function Home() {
   return (
     <Layout onMouseMove={onMouseMove}>
       <Header />
-      <Row>
+      <Row justify>
         <Subscribe />
         <Presentation xy={spring.xy} />
       </Row>
