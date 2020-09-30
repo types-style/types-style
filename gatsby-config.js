@@ -2,6 +2,12 @@ module.exports = {
   plugins: [
     "gatsby-plugin-styled-components",
     {
+      resolve: "gatsby-plugin-google-analytics",
+      options: {
+        trackingId: "UA-179293150-1"
+      }
+    },
+    {
       resolve: "gatsby-plugin-manifest",
       options: {
         start_url: "/",
