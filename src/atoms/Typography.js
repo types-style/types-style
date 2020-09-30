@@ -7,7 +7,7 @@ const Typography = styled.span`
   color: ${COLORS.darkGray};
   font-size: ${({ variant }) => FONT_SIZE[variant]};
 
-  @media ${MEDIA_QUERIES.small} {
+  @media ${MEDIA_QUERIES.medium} {
     font-size: ${({ variant }) => variant === "title" && FONT_SIZE.subtitle};
   }
 `;
