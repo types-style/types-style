@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { SPACING, SIZES } from "../utilities/const";
+import { SPACING, SIZES, MEDIA_QUERIES } from "../utilities/const";
 
 const Container = styled.div`
   display: flex;
@@ -12,6 +12,12 @@ const Container = styled.div`
   width: ${SIZES.container};
   padding-top: ${SPACING.sm};
   padding-bottom: ${SPACING.sm};
+
+  @media ${MEDIA_QUERIES.large} {
+    width: 100%;
+    padding-left: ${SPACING.sm};
+    padding-right: ${SPACING.sm};
+  }
 `;
 
 export default Container;

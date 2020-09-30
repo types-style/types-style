@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { COLORS, SPACING, FONT_FAMILY, FONT_WEIGHT, FONT_SIZE, BORDER_RADIUS } from "../utilities/const";
+import { COLORS, SPACING, FONT_FAMILY, FONT_WEIGHT, FONT_SIZE, BORDER_RADIUS, MEDIA_QUERIES } from "../utilities/const";
 
 const Button = styled.button`
   cursor: pointer;
@@ -13,6 +13,12 @@ const Button = styled.button`
   border: 1px solid ${COLORS.darkOrange};
   border-radius: ${BORDER_RADIUS.rounded};
   padding: ${SPACING.xs} ${SPACING.sm};
+
+  @media ${MEDIA_QUERIES.small} {
+    width: 100%;
+    margin-left: initial;
+    margin-top: ${SPACING.xs};
+  }
 `;
 
 export default Button;

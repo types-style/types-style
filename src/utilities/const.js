@@ -41,6 +41,9 @@ export const SIZES = {
 };
 
 export const MEDIA_QUERIES = {
+  large: "(max-width: 1280px)",
+  medium: "(max-width: 992px)",
+  small: "(max-width: 728px)"
 };
 
 export const SPRING_CONFIG = {
@@ -53,4 +56,5 @@ export const SPRING_CONFIG = {
   }
 };
 
-export const MAILCHIMP_URL = "https://style.us2.list-manage.com/subscribe/post?u=a0b202b5c288322b9c7dcce9c&amp;id=36be112941";
+export const MAILCHIMP_URL =
+  "https://style.us2.list-manage.com/subscribe/post?u=a0b202b5c288322b9c7dcce9c&amp;id=36be112941";

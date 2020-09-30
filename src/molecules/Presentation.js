@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import Image from "../atoms/Image";
+import Images from "../atoms/Images";
 import Column from "../atoms/Column";
 
 import pen from "../static/pen@2x.png";
@@ -38,10 +39,12 @@ function position(xy, index) {
 
 function Presentation({ xy }) {
   return (
-    <Column>
-      {IMAGES.map((image, index) => (
-        <Image key={image.src} {...image} style={{ transform: position(xy, index) }} />
-      ))}
+    <Column last>
+      <Images>
+        {IMAGES.map((image, index) => (
+          <Image key={image.src} {...image} style={{ transform: position(xy, index) }} />
+        ))}
+      </Images>
     </Column>
   );
 }
