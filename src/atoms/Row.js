@@ -16,6 +16,10 @@ const Row = styled.div`
     padding-top: ${({ justify }) => justify && SPACING.lg};
     padding-bottom: ${({ justify }) => justify && SPACING.lg};
   }
+
+  @media ${MEDIA_QUERIES.small} {
+    flex-direction: ${({ justify }) => justify && "column-reverse"};
+  }
 `;
 
 Row.propTypes = {

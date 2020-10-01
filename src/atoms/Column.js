@@ -19,7 +19,7 @@ const Column = styled.div`
     width: 100%;
     padding-left: ${SPACING.sm};
     padding-right: ${SPACING.sm};
-    margin-top: ${({ last }) => last && SPACING.lg};
+    margin-bottom: ${({ last }) => last && SPACING.lg};
   }
 `;
 
